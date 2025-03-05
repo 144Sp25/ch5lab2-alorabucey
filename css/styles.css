@@ -1,11 +1,14 @@
 /*
-Author: Maria Cruz
-Date: Current Date
+Author: Alora Bucey
+Date: 03-05-2025
 File Name: styles.css
 */
 
+/* Google Font CSS Declarations */
+@import url('https://fonts.googleapis.com/css2?family=Emblema+One&family=Lora&display=swap');
+
 /* CSS Reset */
-body, header, nav, main, footer, img, h1, h3 {
+body, header, nav, main, footer, img, h1, h3, ul {
     margin: 0;
     padding: 0;
     border: 0;
@@ -21,6 +24,49 @@ img {
     display: block;
 }
 
+/* Fonts */
+.emblema-one-regular {
+  font-family: "Emblema One", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+.lora-uniquifier> {
+  font-family: "Lora", serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+
+/* Style rules for mobile viewport */
+
+/* Style rules to show mobile class and hide tab-desk class */
+.mobile {
+    display: block;
+}
+.tab-desk {
+    display: none;
+}
+
+/* Style rule for h1 within .mobile class */
+.mobile h1 {
+    font-family: 'Emblema One', sans-serif;
+    padding: 2%;
+    text-align: center;
+}
+
+/* Style rule for h3 within .mobile class */
+.mobile h3 {
+    font-family: 'Lora', serif;
+    padding-top: 2%;
+    text-align: center;
+}
+
+/* Style rules for header area */
+.mobile h1, .mobile h3 {
+    padding: 2%;
+    text-align: center;
+}
+
 /* Style rules for navigation area */
 nav {
     background-color: #2a1f14;
@@ -28,28 +74,21 @@ nav {
 
 nav ul {
     list-style-type: none;
-    margin: 0;
     text-align: center;
 }
 
 nav li {
-    display: inline-block;
+    display: block;  /* Changed from inline-block to block */
     font-size: 1.5em;
     font-family: Geneva, Arial, sans-serif;
     font-weight: bold;
+    border-top: 0.5px solid #f6eee4;  /* Added top border */
 }
 
-nav li a {
-    display: block;
-    color: #f6eee4;
-    padding: 0.5em 2em;
-    text-decoration: none;
-}
-
-/* Style rules for main content */
+/*Style rules for main content*/
 main {
     padding: 2%;
-    font-family: Verdana, Arial, sans-serif;
+    font-family: 'Lora', serif;  /* Added Lora font here */
 }
 
 main p {
@@ -77,8 +116,40 @@ main ul {
     text-align: center;
 }
 
+/* New style rule for the .round class selector */
+.round {
+    border-radius: 6px;
+}
+
+/* New style rule for the #info ul selector */
+#info ul {
+    margin-left: 10%;
+}
+
 #contact {
     text-align: center;
+}
+
+/* Style rule for the .tel-link class selector */
+.tel-link {
+    background-color: #2a1f14;
+    padding: 2%;
+    width: 280%;
+    margin: 0 auto; /* Top/Bottom margin is 0, Right/Left margin is auto */
+}
+
+/* Style rule for the anchor selector within the .tel-link class */
+.tel-link a {
+    color: #f6eee4;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav li a {
+    display: block;
+    color: #f6eee4;
+    padding: 0.5em 2em;
+    text-decoration: none;
 }
 
 /* Style rules for footer content */
